@@ -1,7 +1,12 @@
-i = 1
-num = int(input("Enter the number: "))
-while i < num / 2:
-    if(num % i == 0):
-        print("Number is not a prime number")
+Number = int(input("Please Enter any Number: "))
+count = 0
+i = 2
+
+while(i <= Number//2):
+    if(Number % i == 0):
+        count = count + 1
+        print("%d is not a Prime Number" %Number)
         exit(0)
-print("Number is prime")
+    i = i + 1
+
+print("%d is a Prime Number" %Number)
